@@ -1,0 +1,17 @@
+{
+  "name": "lista",
+  "version": "1.0.0",
+  "description": "lista de compras para enxoval",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index"
+  },
+  "keywords": [
+    "enxoval"
+  ],
+  "author": "allerman",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
