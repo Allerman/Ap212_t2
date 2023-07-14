@@ -4,7 +4,8 @@
   "description": "lista de compras para enxoval",
   "main": "index.js",
   "scripts": {
-    "start": "node index"
+    "start": "node index",
+    "dev": "nodemon index"
   },
   "keywords": [
     "enxoval"
@@ -12,6 +13,8 @@
   "author": "allerman",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2"
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "nodemon": "^3.0.1"
   }
 }
