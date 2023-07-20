@@ -7,7 +7,21 @@
 <title>Ap212</title>
 </head>
 <body>
-    <h1>teste1</h1>
+
+    <form action="/create" method="post">
+        <input type="text" name="item" id="item" placeholder="add">
+        <button id="btnAdd" type="submit">add</button>
+    </form>
+
+    <ul id="quarto"> 
+        <h1>Quarto</h1>
+        
+        <% ListadeItens.forEach((item)=> { %>
+        <li>
+            <%= item.item %>    
+        </li>
+        <%  }) %>
+    </ul>
 
     <script src="script.js"></script>
 </body>
