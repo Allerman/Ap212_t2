@@ -12,11 +12,6 @@
 <body>
 
     <div id="quarto">
-        <form action="/Quarto" method="post">
-            <input type="text" name="item" id="item" placeholder="add">
-            <button id="btnAdd" type="submit">add</button>
-        </form>
-    
         <ul> 
             <h1>Quarto</h1>
             
@@ -26,14 +21,13 @@
             </li>
             <%  }) %>
         </ul>
-    </div>
-
-    <div id="cozinha">
-        <form action="/Cozinha" method="post">
+        <form action="/Quarto" method="post">
             <input type="text" name="item" id="item" placeholder="add">
             <button id="btnAdd" type="submit">add</button>
         </form>
-    
+    </div>
+
+    <div id="cozinha">
         <ul> 
             <h1>Cozinha</h1>
             
@@ -43,14 +37,13 @@
             </li>
             <%  }) %>
         </ul>
-    </div>
-    
-    <div id="lavandeira">
-        <form action="/Lavandeira" method="post">
+        <form action="/Cozinha" method="post">
             <input type="text" name="item" id="item" placeholder="add">
             <button id="btnAdd" type="submit">add</button>
         </form>
+    </div>
     
+    <div id="lavandeira">
         <ul> 
             <h1>Lavandeira</h1>
             
@@ -60,14 +53,13 @@
             </li>
             <%  }) %>
         </ul>
-    </div>
-    
-    <div id="banheiro">
-        <form action="/Banheiro" method="post">
+        <form action="/Lavandeira" method="post">
             <input type="text" name="item" id="item" placeholder="add">
             <button id="btnAdd" type="submit">add</button>
         </form>
+    </div>
     
+    <div id="banheiro">    
         <ul> 
             <h1>Banheiro</h1>
             
@@ -77,6 +69,10 @@
             </li>
             <%  }) %>
         </ul>
+        <form action="/Banheiro" method="post">
+            <input type="text" name="item" id="item" placeholder="add">
+            <button id="btnAdd" type="submit">add</button>
+        </form>
     </div>
     
     <script src="script.js"></script>
