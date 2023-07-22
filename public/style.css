@@ -1,3 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Mynerve&display=swap');
+
+*{
+    font-family: 'Mynerve', cursive;
+}
+body{
+    margin: 0;
+    padding: 20px;
+}
+.titulo{
+    margin: 0 auto;
+    max-width: 10%;
+    font-size: 40px;
+}
+#conteiner{
+display: flex;
+align-items: center;
+justify-content: space-around;
+margin-right: 23px;
+}
+#cozinha{
+    margin-top: 8%;
+}
+#quarto{
+    margin-bottom: 35%;
+}
+#lavanderia{
+    margin-bottom: 31%;
+}
+#banheiro{
+    margin-bottom: 29%;
+}
+ul {
+    list-style: none;
+  }
 h1{
-    color: aqua;
+    color: rgb(2, 37, 37);
+}
+button{
+    width: 23px;
+    height: 23px;
+    cursor: pointer;
+    border-radius: 50%;
+    margin-left: 6px; 
+}
+input{
+    margin-left: 40px; 
 }
