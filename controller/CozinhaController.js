@@ -1,16 +1,5 @@
 const Cozinha = require('../model/Cozinha');
 
-const getC = async (req,res) => {
-    try{
-        const ListaCozinha = await Cozinha.find(); 
-        return res.render("index", {ListaCozinha});
-    }
-    catch(err){
-        res.status(500).send({error: err.message})
-    }
-
-};
-
 const creatItemCozinha = async (req,res)=>{
     const item=req.body;
     
@@ -29,5 +18,4 @@ const creatItemCozinha = async (req,res)=>{
 
 module.exports = {
     creatItemCozinha,
-    getC,
 }

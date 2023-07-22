@@ -1,16 +1,5 @@
 const Lavanderia = require('../model/Lavanderia');
 
-const getL = async (req,res) => {
-    try{
-        const ListaLavanderia = await Lavanderia .find(); 
-        return res.render("index", {ListaLavanderia});
-    }
-    catch(err){
-        res.status(500).send({error: err.message})
-    }
-
-};
-
 const creatItemLavanderia = async (req,res)=>{
     const item=req.body;
     
@@ -29,5 +18,4 @@ const creatItemLavanderia = async (req,res)=>{
 
 module.exports = {
     creatItemLavanderia,
-    getL,
 }

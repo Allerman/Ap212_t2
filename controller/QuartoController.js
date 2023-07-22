@@ -1,16 +1,5 @@
 const Quarto = require('../model/Quarto');
 
-const getQ = async (req,res) => {
-    try{
-        const ListaQuarto = await Quarto.find(); 
-        return res.render("index", {ListaQuarto});
-    }
-    catch(err){
-        res.status(500).send({error: err.message})
-    }
-
-};
-
 const creatItemQuarto = async (req,res)=>{
     const item=req.body;
     
@@ -29,5 +18,4 @@ const creatItemQuarto = async (req,res)=>{
 
 module.exports = {
     creatItemQuarto,
-    getQ,
 }

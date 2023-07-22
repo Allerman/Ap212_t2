@@ -1,16 +1,5 @@
 const Banheiro = require('../model/Banheiro');
 
-const getB = async (req,res) => {
-    try{
-        const ListaBanheiro = await Banheiro.find(); 
-        return res.render("index", {ListaBanheiro});
-    }
-    catch(err){
-        res.status(500).send({error: err.message})
-    }
-
-};
-
 const creatItemBanheiro = async (req,res)=>{
     const item=req.body;
     
@@ -29,5 +18,4 @@ const creatItemBanheiro = async (req,res)=>{
 
 module.exports = {
     creatItemBanheiro,
-    getB,
 }
