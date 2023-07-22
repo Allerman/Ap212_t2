@@ -5,6 +5,9 @@ const path = require("path");
 const routes = require("./routes/routes");
 const connectToDb = require("./database/db");
 
+// app.get("/teste", (req,res) =>{
+//     res.send("teste")});
+
 connectToDb();
 app.set("view engine","ejs");
 app.use(express.static(path.join(__dirname,"public")));
