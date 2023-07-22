@@ -11,40 +11,73 @@
 
 <body>
 
-<div id="quarto">
+    <div id="quarto">
+        <form action="/Quarto" method="post">
+            <input type="text" name="item" id="item" placeholder="add">
+            <button id="btnAdd" type="submit">add</button>
+        </form>
     
-    <form action="/Quarto" method="post">
-        <input type="text" name="item" id="item" placeholder="add">
-        <button id="btnAdd" type="submit">add</button>
-    </form>
+        <ul> 
+            <h1>Quarto</h1>
+            
+            <% ListaQuarto.forEach((item)=> { %>
+            <li>
+                <%= item.item %>    
+            </li>
+            <%  }) %>
+        </ul>
+    </div>
 
-    <ul> 
-        <h1>Quarto</h1>
-        
-        <% ListaQuarto.forEach((item)=> { %>
-        <li>
-            <%= item.item %>    
-        </li>
-        <%  }) %>
-    </ul>
-</div>
-
-<div id="lavanderia">
-    <form action="/Lavanderia" method="post">
-        <input type="text" name="item" id="item" placeholder="add">
-        <button id="btnAdd" type="submit">add</button>
-    </form>
-
-    <ul> 
-        <h1>Lavanderia</h1>
-        
-        <% ListaLavanderia.forEach((item)=> { %>
-        <li>
-            <%= item.item %>    
-        </li>
-        <%  }) %>
-    </ul>
-</div>
+    <div id="cozinha">
+        <form action="/Cozinha" method="post">
+            <input type="text" name="item" id="item" placeholder="add">
+            <button id="btnAdd" type="submit">add</button>
+        </form>
+    
+        <ul> 
+            <h1>Cozinha</h1>
+            
+            <% ListaCozinha.forEach((item)=> { %>
+            <li>
+                <%= item.item %>    
+            </li>
+            <%  }) %>
+        </ul>
+    </div>
+    
+    <div id="lavandeira">
+        <form action="/Lavandeira" method="post">
+            <input type="text" name="item" id="item" placeholder="add">
+            <button id="btnAdd" type="submit">add</button>
+        </form>
+    
+        <ul> 
+            <h1>Lavandeira</h1>
+            
+            <% ListaLavanderia.forEach((item)=> { %>
+            <li>
+                <%= item.item %>    
+            </li>
+            <%  }) %>
+        </ul>
+    </div>
+    
+    <div id="banheiro">
+        <form action="/Banheiro" method="post">
+            <input type="text" name="item" id="item" placeholder="add">
+            <button id="btnAdd" type="submit">add</button>
+        </form>
+    
+        <ul> 
+            <h1>Banheiro</h1>
+            
+            <% ListaBanheiro.forEach((item)=> { %>
+            <li>
+                <%= item.item %>    
+            </li>
+            <%  }) %>
+        </ul>
+    </div>
     
     <script src="script.js"></script>
 </body>
