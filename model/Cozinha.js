@@ -7,7 +7,7 @@ const cozinhaSchema = new mongoose.Schema({
     },
     check:{
         type: Boolean,
-        require: true,
+        default: false,
     }
 })
 

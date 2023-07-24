@@ -7,7 +7,8 @@ const LavanderiaController = require("../controller/LavanderiaController");
 const BanheiroController = require("../controller/BanheiroController");
 
 routes.get("/", HomeController.getAllItems);
-
+routes.put('/atualizar/:id', CozinhaController.itemCheck);
+routes.delete('/deletar/:id', HomeController.deleteItem);
 routes.post("/Quarto", QuartoController.creatItemQuarto);
 routes.post("/Cozinha", CozinhaController.creatItemCozinha);
 routes.post("/Lavanderia", LavanderiaController.creatItemLavanderia);

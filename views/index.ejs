@@ -21,6 +21,7 @@
             <% ListaQuarto.forEach((item)=> { %>
             <li>
                 <%= item.item %>    
+                <button class="delete-btn" data-id="<%= item._id %>">x</button>
             </li>
             <%  }) %>
         </ul>
@@ -35,8 +36,10 @@
             <h1>Cozinha</h1>
             
             <% ListaCozinha.forEach((item)=> { %>
-            <li>
-                <%= item.item %>    
+            <li class="check-<%= item.check %>">
+                <input type="checkbox"  <%= item.check ? 'checked' : '' %> data-id="<%= item._id %>" class="check-item">
+                <%= item.item %>
+                <button class="delete-btn" data-id="<%= item._id %>">x</button>
             </li>
             <%  }) %>
         </ul>
@@ -52,7 +55,8 @@
             
             <% ListaLavanderia.forEach((item)=> { %>
             <li>
-                <%= item.item %>    
+                <%= item.item %> 
+                <button class="delete-btn" data-id="<%= item._id %>">x</button>
             </li>
             <%  }) %>
         </ul>
@@ -68,7 +72,8 @@
             
             <% ListaBanheiro.forEach((item)=> { %>
             <li>
-                <%= item.item %>    
+                <%= item.item %>
+                <button class="delete-btn" data-id="<%= item._id %>">x</button>   
             </li>
             <%  }) %>
         </ul>
@@ -78,6 +83,7 @@
         </form>
     </div>
 </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
